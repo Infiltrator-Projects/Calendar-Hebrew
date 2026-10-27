@@ -350,7 +350,11 @@ provider_period_start(const InfiltratrTemporalCalendarProvider *provider,
     (void)provider;
     if (result == NULL || !hebrew_fields_checked(jdn, &fields))
         return false;
-    *result = hebrew_to_jdn(fields.year, fields.month, 1);
+    const int64_t candidate = hebrew_to_jdn(fields.year, fields.month, 1);
+    InfiltratrTemporalCalendarFields checked;
+    if (!hebrew_fields_checked(candidate, &checked))
+        return false;
+    *result = candidate;
     return true;
 }
 
