@@ -1,0 +1,112 @@
+{
+  "title": "Hebrew Calendar",
+  "intro": "The fixed Hebrew calendar is lunisolar: months follow a lunar rhythm, but additional months keep key festivals near their customary seasons. Years are counted in the traditional Anno Mundi era.",
+  "summary": "Most years contain twelve months; seven years in a nineteen-year cycle contain a thirteenth month.",
+  "origin": "The fixed calculated rabbinic calendar developed over centuries. This program does not model every earlier local new-moon observation.",
+  "ring_label": "12/13",
+  "diagram_title": "THE NINETEEN-YEAR CYCLE",
+  "structure": "The nineteen-year diagram shows ordinary and leap years. In a leap year, the calendar adds a second Adar month to keep lunar months aligned with the seasonal year.",
+  "diagram_caption": "RUST MARKS THE 13-MONTH YEARS",
+  "sections": [
+    {
+      "name": "Year 1",
+      "days": "12 mo",
+      "special": false
+    },
+    {
+      "name": "Year 2",
+      "days": "12 mo",
+      "special": false
+    },
+    {
+      "name": "Year 3",
+      "days": "13 mo",
+      "special": true
+    },
+    {
+      "name": "Year 4",
+      "days": "12 mo",
+      "special": false
+    },
+    {
+      "name": "Year 5",
+      "days": "12 mo",
+      "special": false
+    },
+    {
+      "name": "Year 6",
+      "days": "13 mo",
+      "special": true
+    },
+    {
+      "name": "Year 7",
+      "days": "12 mo",
+      "special": false
+    },
+    {
+      "name": "Year 8",
+      "days": "13 mo",
+      "special": true
+    },
+    {
+      "name": "Year 9",
+      "days": "12 mo",
+      "special": false
+    },
+    {
+      "name": "Year 10",
+      "days": "12 mo",
+      "special": false
+    },
+    {
+      "name": "Year 11",
+      "days": "13 mo",
+      "special": true
+    },
+    {
+      "name": "Year 12",
+      "days": "12 mo",
+      "special": false
+    },
+    {
+      "name": "Year 13",
+      "days": "12 mo",
+      "special": false
+    },
+    {
+      "name": "Year 14",
+      "days": "13 mo",
+      "special": true
+    },
+    {
+      "name": "Year 15",
+      "days": "12 mo",
+      "special": false
+    },
+    {
+      "name": "Year 16",
+      "days": "12 mo",
+      "special": false
+    },
+    {
+      "name": "Year 17",
+      "days": "13 mo",
+      "special": true
+    },
+    {
+      "name": "Year 18",
+      "days": "12 mo",
+      "special": false
+    },
+    {
+      "name": "Year 19",
+      "days": "13 mo",
+      "special": true
+    }
+  ],
+  "pattern_note": "A fixed set of leap years (3, 6, 8, 11, 14, 17 and 19) keeps festivals near their seasons. Some months vary between 29 and 30 days and postponement rules set the year start.",
+  "history": "This calendar underpins many Jewish religious dates. Its fixed formula is not a historical record of every earlier observational practice, and religious days traditionally begin at sunset.",
+  "example": "Passover falls in Nisan, around Northern Hemisphere spring. In a Hebrew leap year the additional Adar keeps Nisan from drifting through winter.",
+  "limits": "The software implements the fixed Hebrew calculation, not the timing of every local religious observance or the varying methods once used to declare months.",
+  "source": "https://github.com/Infiltrator-Projects/Calendar-Hebrew"
+}
