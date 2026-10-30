@@ -98,10 +98,9 @@
       "selected_definitions": []
     },
     {
-      "path": "src/calendars/engine/icu-calendar.c",
+      "path": "src/calendars/engine/icu-calendar.cpp",
       "source_path": "resources/temporal/src/calendars/engine/icu-calendar.c",
       "source_sha256": "48e753f455c0147fe6ab0522ae3a157ac4a9b77a8e0e618d6db1dd53dcf0aaa4",
-      "copied_sha256": "47f01607e3e3e578fd277a4f1c160e8937bf21ab20eb9b031baa1b8395d13989",
       "selected_definitions": [
         "ICU_MAX_DAY_OFFSET",
         "ICU_MIN_DAY_OFFSET",
@@ -114,7 +113,8 @@
         "pattern_for_part",
         "utc_zone",
         "utf16_to_utf8"
-      ]
+      ],
+      "cpp_port_note": "C++20 adapter port; original C source traced by source_path/source_sha256"
     },
     {
       "path": "src/calendars/engine/icu-calendar.h",
