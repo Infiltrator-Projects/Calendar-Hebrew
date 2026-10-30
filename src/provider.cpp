@@ -233,7 +233,7 @@ hebrew_from_jdn(int64_t jdn,
     if (month_index > 0)
         month_index--;
 
-    *fields = (InfiltratrTemporalCalendarFields){
+    *fields = InfiltratrTemporalCalendarFields{
         .year = year,
         .month = month_index + 1,
         .day = (int32_t)infiltratr_i64_subtract_saturating(
@@ -426,18 +426,18 @@ static const InfiltratrTemporalCalendarProvider hebrew_provider = {
     .add_years = provider_add_years
 };
 
-CALENDAR_RESOURCE_EXPORT const InfiltratrTemporalResourceMetadata *
+extern "C" CALENDAR_RESOURCE_EXPORT const InfiltratrTemporalResourceMetadata *
 infiltratr_temporal_resource_metadata_v1(void);
-CALENDAR_RESOURCE_EXPORT const InfiltratrTemporalCalendarProvider *
+extern "C" CALENDAR_RESOURCE_EXPORT const InfiltratrTemporalCalendarProvider *
 infiltratr_temporal_calendar_provider_v1(void);
 
-CALENDAR_RESOURCE_EXPORT const InfiltratrTemporalResourceMetadata *
+extern "C" CALENDAR_RESOURCE_EXPORT const InfiltratrTemporalResourceMetadata *
 infiltratr_temporal_resource_metadata_v1(void)
 {
     return &hebrew_metadata;
 }
 
-CALENDAR_RESOURCE_EXPORT const InfiltratrTemporalCalendarProvider *
+extern "C" CALENDAR_RESOURCE_EXPORT const InfiltratrTemporalCalendarProvider *
 infiltratr_temporal_calendar_provider_v1(void)
 {
     return &hebrew_provider;
