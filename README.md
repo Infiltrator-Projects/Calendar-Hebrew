@@ -48,4 +48,4 @@ Each package owns only this provider and its passive documentation. Its `Replace
 
 ## User documentation
 
-Only `Hebrew Calendar.so` and the illustrated `Hebrew Calendar.pdf` are installed. Build records remain in Debian control metadata and technical records in GitHub; `docs/GUIDE.json` is the source of the human-readable PDF.
+Only `Hebrew Calendar.so` and the illustrated `Calendar-Hebrew.pdf` are installed. Build records remain in Debian control metadata and technical records in GitHub; `docs/GUIDE.json` is the source of the human-readable PDF.
