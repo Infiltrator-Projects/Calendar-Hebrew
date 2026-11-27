@@ -1,12 +1,7 @@
 {
   "title": "Hebrew Calendar",
-  "intro": "The fixed Hebrew calendar is lunisolar: months follow a lunar rhythm, but additional months keep key festivals near their customary seasons. Years are counted in the traditional Anno Mundi era.",
-  "summary": "Most years contain twelve months; seven years in a nineteen-year cycle contain a thirteenth month.",
-  "origin": "The fixed calculated rabbinic calendar developed over centuries. This program does not model every earlier local new-moon observation.",
-  "ring_label": "12/13",
-  "diagram_title": "THE NINETEEN-YEAR CYCLE",
-  "structure": "The nineteen-year diagram shows ordinary and leap years. In a leap year, the calendar adds a second Adar month to keep lunar months aligned with the seasonal year.",
-  "diagram_caption": "RUST MARKS THE 13-MONTH YEARS",
+  "intro": "The fixed Hebrew calendar is lunisolar, with Anno Mundi year numbering and calculated month lengths.",
+  "structure": "Ordinary years have twelve months. Seven years of the nineteen-year cycle have thirteen months because a second Adar is inserted. The leap years are 3, 6, 8, 11, 14, 17 and 19.",
   "sections": [
     {
       "name": "Year 1",
@@ -104,9 +99,13 @@
       "special": true
     }
   ],
-  "pattern_note": "A fixed set of leap years (3, 6, 8, 11, 14, 17 and 19) keeps festivals near their seasons. Some months vary between 29 and 30 days and postponement rules set the year start.",
-  "history": "This calendar underpins many Jewish religious dates. Its fixed formula is not a historical record of every earlier observational practice, and religious days traditionally begin at sunset.",
-  "example": "Passover falls in Nisan, around Northern Hemisphere spring. In a Hebrew leap year the additional Adar keeps Nisan from drifting through winter.",
-  "limits": "The software implements the fixed Hebrew calculation, not the timing of every local religious observance or the varying methods once used to declare months.",
-  "source": "https://github.com/Infiltrator-Projects/Calendar-Hebrew"
+  "pattern_note": "Months contain 29 or 30 days; some lengths depend on postponement rules for the year start.",
+  "example": "Passover falls in Nisan, around Northern Hemisphere spring. Intercalating Adar maintains the seasonal alignment.",
+  "history": "The fixed rabbinic calculation developed over centuries and is used for Jewish religious dates. Religious days traditionally begin at sunset.",
+  "model": "This provider owns the deterministic 19-year calendar and postponement rules. ICU/CLDR supplies locale-sensitive formatting rather than defining the date arithmetic.",
+  "limits": "It does not reconstruct earlier local new-moon observations or specify the timing of every local religious observance.",
+  "sources": [
+    "https://github.com/Infiltrator-Projects/Calendar-Hebrew",
+    "Model evidence: https://github.com/Infiltrator-Projects/Calendar-Hebrew/blob/main/docs/MODEL.md"
+  ]
 }
